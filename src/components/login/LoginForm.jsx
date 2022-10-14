@@ -12,11 +12,11 @@ const LoginForm = () => {
         <label htmlFor="userName">Username</label>
         <input
           autoComplete="off"
-          placeholder="enter username"
+          placeholder="enter email"
           value={username}
           id="userName"
           required
-          type="text"
+          type="email"
           onChange={(e) => setUsername(e.target.value)}
         />
         <label htmlFor="password">Password</label>
