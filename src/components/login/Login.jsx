@@ -1,5 +1,6 @@
 import React from "react";
-import { LoginContextProvider } from "../context/LoginContextProvider";
+import { LoginContextProvider } from "../../context/LoginContextProvider";
+
 import LoginForm from "./LoginForm";
 
 const Login = () => {

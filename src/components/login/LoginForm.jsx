@@ -1,11 +1,12 @@
 import React, {useContext} from 'react'
-import { LoginContext } from '../context/LoginContextProvider';
+import { Link } from 'react-router-dom';
+import { LoginContext } from '../../context/LoginContextProvider';
+import Register from '../register/Register';
 
 const LoginForm = () => {
  const {handleSubmit, username, password, setPassword, setUsername} = useContext(LoginContext);
   return (
     <>
-    
       <form onSubmit={handleSubmit} className="login-form">
         <h1>HRMI LOGIN</h1>
         <label htmlFor="userName">Username</label>
@@ -20,7 +21,6 @@ const LoginForm = () => {
         />
         <label htmlFor="password">Password</label>
         <input
-          autoComplete="off"
           placeholder="enter password"
           value={password}
           id="password"
@@ -29,7 +29,7 @@ const LoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">LOGIN</button>
-        <a href="#">Register</a>
+        <Link to='/register' component={<Register/>}>Register</Link>
       </form>
     </>
   )

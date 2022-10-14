@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/**login form */
+input{
+  font-size: 1rem;
+}
 .login {
   margin: 2em auto;
   align-items: center;
@@ -68,4 +72,65 @@ button:hover {
   align-items: center;
   text-align: center;
   text-decoration: none;
+}
+/***registeration form*/
+.register {
+  margin: 2em auto;
+  align-items: center;
+  align-content: center;
+  padding: 1em;
+  max-width: 35rem;
+  width: 100%;
+}
+.register h1 {
+  text-align: center;
+  color: #14c1ec;
+  font-weight: normal;
+}
+.register-form {
+  margin: 1em auto;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f1f1;
+  max-width: 20rem;
+  box-shadow: 0 0.3em #88888888;
+  border-radius: 0.5em;
+}
+.register-form input {
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 0px;
+  background-color: #d9d9d988;
+}
+
+.register-form button {
+  margin: 1em;
+  border-radius: 0.5em;
+  border: 0px;
+  padding: 1em;
+  background-color: rgb(20, 193, 236);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 1px 2px #888888;
+}
+
+.register a {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+button:hover {
+  background-color: rgb(20, 193, 236, 0.7);
+}
+input:focus {
+  border-color: #14c1ec;
+  border-width: 1px;
+  background-color: aliceblue;
+}
+input:hover {
+  border-color: #14c1ec;
+  border-width: 1px;
 }
