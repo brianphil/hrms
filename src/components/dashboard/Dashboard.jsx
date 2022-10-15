@@ -1,26 +1,25 @@
 import React from "react";
-
+import DashboardContent from "./content/DashboardContent";
+import Navigation from "./navigation/Navigation";
+import { Row, Col, Layout } from "antd";
+import NavBar from "./navigation/NavBar";
+import SideBar from "./layout/SideBar";
 const Dashboard = () => {
+  const { Header, Content, Footer, Sider } = Layout;
   return (
-    <section>
-      <div className="top-section">
-        <div className="logo">
-          HRMI{" "}
-          <span
-            style={{
-              backgroundColor: "white",
-              color: "#14C1EC",
-              padding: "0.1em",
-            }}
-          >
-            SYSTEM
-          </span>
-        </div>
-      </div>
-      <div className="side-menu">
-        <div className="nav-bar">Navigation</div>
-      </div>
-    </section>
+    <>
+      <Layout>
+        <NavBar menu={<Navigation />} />
+        {/* <Header>This is header</Header> */}
+
+        <Layout>
+          <SideBar menu={<Navigation />} />
+          <Content style={{ marginTop: "1em" }}>
+            <DashboardContent />
+          </Content>
+        </Layout>
+      </Layout>
+    </>
   );
 };
 

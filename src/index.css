@@ -3,12 +3,11 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Work Sans';
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #6bbac588;
 }
 
 /**login form */
@@ -35,21 +34,24 @@ input{
   flex-direction: column;
   background-color: #f4f1f1;
   max-width: 20rem;
-  box-shadow: 0 0.3em #88888888;
+  box-shadow: 0 0.3em 0.3em #88888888;
   border-radius: 0.5em;
+  font-size: 1em;
 }
 .login-form input {
-  padding: 1em;
+  padding: 0.8em;
   margin-top: 1em;
   margin-bottom: 1em;
   border-radius: 0.3em;
   border: 0px;
   background-color: #d9d9d988;
+  box-shadow: 0 0.1em 0.1em #888888;
 }
 input:focus {
   border-color: #14c1ec;
   border-width: 1px;
   background-color: aliceblue;
+  box-shadow: 0 0.1em 0.2em #14c1ec;
 }
 input:hover {
   border-color: #14c1ec;
@@ -63,7 +65,7 @@ input:hover {
   background-color: rgb(20, 193, 236);
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 1px 2px #888888;
+  box-shadow: 0 0.2em 0.2em #888888;
 }
 button:hover {
   background-color: rgb(20, 193, 236, 0.7);
@@ -94,7 +96,7 @@ button:hover {
   flex-direction: column;
   background-color: #f4f1f1;
   max-width: 20rem;
-  box-shadow: 0 0.3em #88888888;
+  box-shadow: 0 0.3em 0.3em #88888888;
   border-radius: 0.5em;
 }
 .register-form input {
@@ -145,7 +147,7 @@ input:hover {
 .top-section{
   max-width: 100%;
   height: 10vh;
-  z-index: 100;
+  /* z-index: 100; */
   background-color: #14C1EC;
   margin: auto;
   align-items: center;
@@ -170,20 +172,35 @@ input:hover {
 
 
 .side-menu{
-  width: 15%;
-  min-height: 100vh;
-  margin-top: -4rem;
+  min-height: 90vh;
   overflow: auto;
-  position: absolute;
   align-items: left;
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color:rgb(20, 193, 236,.7);
-  z-index: 50
+  /* z-index: 50 */
 
 }
 .nav-bar{
   margin-top: 5em;
-  margin-left: 1em;
+  /* margin-left: 2em; */
+  font-size: 1em;
   
 }
+
+.container-dashboard{
+  margin-top: 1rem;
+  position: absolute;
+  z-index: 50;
+  max-width: 83%;
+}
+
+/* .ant-menu-light{
+  background-color:rgb(20, 193, 236,0);
+  color:white;
+} */
+.content{
+  padding: 0rem;
+}
+

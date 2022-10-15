@@ -1,0 +1,25 @@
+.navbar {
+    background-color: rgb(20, 193, 236);
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  /* ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+  }
+  li {
+    margin-left: 1em;
+  } */
+  @media (min-width: 992px) {
+    .menu {
+      display: none;
+    }
+  }.logo {
+    height: 32px;
+    margin-left: 1rem;
+  }
